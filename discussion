@@ -1,0 +1,31 @@
+From the recursive spectral modularity partitioning, the Karate Club network was split into multiple communities, and centrality metrics were tracked across iterations. Several observations emerge:
+
+Persistent Central Nodes
+
+Nodes 0 (the instructor) and 33 (the administrator) consistently remain the most central throughout the splits.
+
+They have the highest degree centrality (many direct connections) and also maintain high closeness (short distance to others).
+
+Their betweenness centrality also stays high because they act as bridges between different communities.
+
+Effect of Community Splitting
+
+After partitioning, nodes located at boundaries between communities (e.g., nodes 0, 33, 2, 32) experience an increase in betweenness since they lie on shortest paths between groups.
+
+Nodes inside small, dense communities show higher clustering coefficients but lower centrality, since their influence does not extend across communities.
+
+Evolution of Metrics
+
+Degree centrality does not change with partitioning (since edges remain the same), but its relative importance is clearer in identifying hubs.
+
+Betweenness centrality highlights which nodes act as intermediaries once the network splits—especially nodes 0 and 33.
+
+Closeness centrality decreases for peripheral nodes after splitting, as they become more distant from other communities.
+
+Clustering coefficient is highest for nodes in tightly knit subgroups, showing how community structure reinforces local clustering.
+
+Community Influence on Centrality
+
+Community structure strongly determines which nodes are global versus local leaders.
+
+Nodes 0 and 33 remain globally central, while others (like nodes 1, 2, 3, 32) are important within their respective communities but less central overall.
